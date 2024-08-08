@@ -89,6 +89,47 @@ Berikut adalah tampilan form ToDo List:
 
 ![Tampilan Form ToDo List](https://github.com/AkhmadFarizi/TestToDoList/blob/master/FormTodoList.png)
 
+## Tampilan Dokumentasi Api Swagger
+
+Berikut adalah Dokumentasi Api Swagger ToDo List:
+![Tampilan Api ToDo List](https://github.com/AkhmadFarizi/TestToDoList/blob/master/sw1.png)
+
+Post Data Todo list
+![Tampilan Api ToDo List](https://github.com/AkhmadFarizi/TestToDoList/blob/master/sw2.png)
+
+Get ALL Data Todo list
+![Tampilan Api ToDo List](https://github.com/AkhmadFarizi/TestToDoList/blob/master/sw3.png)
+
+    Contoh
+
+    {
+    "id": 19,
+    "name": "akhmad farizi",
+    "username": "sasasasa",
+    "email": "farizi2710@gmail.com",
+    "created_at": "2024-08-08T12:44:50.000000Z",
+    "updated_at": "2024-08-08T12:44:50.000000Z",
+    "deleted_at": null,
+    "tasks": [
+      {
+        "id": 12,
+        "user_id": 19,
+        "category_id": 1,
+        "description": "ssssssssssss",
+        "created_at": "2024-08-08T12:44:50.000000Z",
+        "updated_at": "2024-08-08T12:44:50.000000Z",
+        "deleted_at": null,
+        "category": {
+          "id": 1,
+          "name": "Todo",
+          "created_at": "2024-08-08T11:41:01.000000Z",
+          "updated_at": "2024-08-08T11:41:01.000000Z",
+          "deleted_at": null
+        }
+      }
+
+
+
 
 
         
