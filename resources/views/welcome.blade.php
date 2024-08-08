@@ -81,7 +81,7 @@
             axios.get('/api/categories')
                 .then(response => {
                     const data = response.data;
-                    const dropdowns = document.querySelectorAll('.category-dropdown');
+                    const dropdowns = document.querySelectorAll('.category-dropdown:not(.populated)');
                     dropdowns.forEach(dropdown => {
                         data.forEach(category => {
                             const option = document.createElement('option');
@@ -89,6 +89,8 @@
                             option.textContent = category.name;
                             dropdown.appendChild(option);
                         });
+                        // Tambahkan class untuk menandai bahwa dropdown sudah diisi
+                        dropdown.classList.add('populated');
                     });
                 })
                 .catch(error => {
@@ -96,17 +98,6 @@
                 });
         }
 
-        function loadCategories1() {
-            axios.get('/api/get')
-                .then(response => {
-                    const data = response.data;
-                    console.log(data);
-                })
-                .catch(error => {
-                    console.error('Error fetching categories:', error);
-                });
-        }
-    
         function addTodoItem() {
             const todoItem = document.createElement('div');
             todoItem.classList.add('row', 'mt-2', 'todo-item');
@@ -114,7 +105,7 @@
                 <div class="col-md-9">
                     <div class="Todo">
                         <label class="form-label">To Do List </label>
-                        <input type="text" class="form-control" placeholder="Contoh : Perbaikan Api">
+                        <input type="text" class="form-control" placeholder="Contoh : Perbaikan Api" required>
                     </div>
                 </div>
                 <div class="col-md-3">
@@ -133,13 +124,14 @@
                     </div>
                 </div>
             `;
-    
+
             document.getElementById('todoContainer').appendChild(todoItem);
             loadCategories();
         }
     
         document.getElementById('addTodoBtn').addEventListener('click', function(event) {
             event.preventDefault(); 
+            Swal.fire('Berhasil!', 'to do list Anda telah ditambahkan.', 'success');
             addTodoItem();
         });
 
