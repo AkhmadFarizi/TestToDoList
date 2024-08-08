@@ -41,11 +41,11 @@ Proyek ini adalah aplikasi Laravel yang memungkinkan pengguna untuk mengelola To
     ```bash
     php artisan key:generate
 
-jalankan migrasi
+    jalankan migrasi
 
     php artisan migrate
 
-jalankan seeder untuk seeder Category
+    jalankan seeder untuk seeder Category
 
     php artisan db:seed
 
