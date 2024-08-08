@@ -18,9 +18,6 @@ Proyek ini adalah aplikasi Laravel yang memungkinkan pengguna untuk mengelola To
 
    ```bash
    git clone https://github.com/AkhmadFarizi/TestToDoList.git
-
-masuk folder 
-
    cd TodoList
 
 2. **Salin File .env.example**
@@ -47,7 +44,7 @@ jalankan migrasi
 
     php artisan migrate
 
-jalankan seeder
+jalankan seeder untuk seeder Category
 
     php artisan db:seed
 
