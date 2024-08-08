@@ -2,7 +2,7 @@
 
 ## Deskripsi
 
-Proyek ini adalah aplikasi Laravel yang memungkinkan pengguna untuk mengelola data pengguna dan tugas mereka. API ini menggunakan Swagger untuk dokumentasi.
+Proyek ini adalah aplikasi Laravel yang memungkinkan pengguna untuk mengelola To do List. API ini menggunakan Swagger untuk dokumentasi.
 
 ## Prerequisites
 
