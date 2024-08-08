@@ -131,7 +131,6 @@
     
         document.getElementById('addTodoBtn').addEventListener('click', function(event) {
             event.preventDefault(); 
-            Swal.fire('Berhasil!', 'to do list Anda telah ditambahkan.', 'success');
             addTodoItem();
         });
 
