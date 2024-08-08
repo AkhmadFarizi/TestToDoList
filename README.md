@@ -83,9 +83,11 @@ Clear Cache
     http://127.0.0.1:8000/api/documentation
 
 
-## Sample Aplikasi
+## Tampilan Form
 
-    ![Deskripsi Gambar](https://github.com/AkhmadFarizi/TestToDoList/blob/master/HalamanFormTodolist.png)
+Berikut adalah tampilan form ToDo List:
+
+![Tampilan Form ToDo List](https://github.com/AkhmadFarizi/TestToDoList/blob/master/HalamanFormTodolist.png)
 
 
 
