@@ -60,7 +60,7 @@
                     </div>
                     
                     <div id="todoContainer">
-                        <!-- Contoh elemen pertama (bisa dihapus jika tidak diperlukan) -->
+                        
                     </div>
                     
                     <div class="row mt-2">
@@ -114,7 +114,7 @@
                 <div class="col-md-9">
                     <div class="Todo">
                         <label class="form-label">To Do List </label>
-                        <input type="text" class="form-control" placeholder="Nama">
+                        <input type="text" class="form-control" placeholder="Contoh : Perbaikan Api">
                     </div>
                 </div>
                 <div class="col-md-3">
@@ -135,11 +135,11 @@
             `;
     
             document.getElementById('todoContainer').appendChild(todoItem);
-            loadCategories(); // Load categories each time a new item is added
+            loadCategories();
         }
     
         document.getElementById('addTodoBtn').addEventListener('click', function(event) {
-            event.preventDefault(); // Mencegah refresh halaman
+            event.preventDefault(); 
             addTodoItem();
         });
 
@@ -155,9 +155,9 @@
 
     
         document.getElementById('todoForm').addEventListener('submit', function(event) {
-            event.preventDefault(); // Mencegah refresh halaman
+            event.preventDefault(); 
 
-            // Reset pesan kesalahan
+            
             document.getElementById('nameError').textContent = '';
             document.getElementById('usernameError').textContent = '';
             document.getElementById('emailError').textContent = '';
@@ -166,7 +166,7 @@
             const username = document.getElementById('username').value.trim();
             const email = document.getElementById('email').value.trim();
 
-            // Validasi tasks
+           
             const tasks = Array.from(document.querySelectorAll('.todo-item')).map(item => {
                 const taskName = item.querySelector('input[type="text"]').value.trim();
                 const category_id = item.querySelector('.category-dropdown').value;
@@ -189,12 +189,12 @@
             .then(data => {
                 if (data.success) {
                     Swal.fire('Berhasil!', 'Data Anda telah disimpan.', 'success');
-                    // Kosongkan semua field setelah sukses
+                    
                     document.getElementById('name').value = '';
                     document.getElementById('username').value = '';
                     document.getElementById('email').value = '';
 
-                    // Kosongkan semua To Do List yang telah ditambahkan
+                    
                     document.getElementById('todoContainer').innerHTML = '';
                 } else {
                     // Menampilkan pesan kesalahan dari server
