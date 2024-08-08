@@ -22,6 +22,7 @@ Proyek ini adalah aplikasi Laravel yang memungkinkan pengguna untuk mengelola To
 
 2. **Salin File .env.example**
 
+    ```bash
     cp .env.example .env
 
 3. **Konfigurasi Database**
